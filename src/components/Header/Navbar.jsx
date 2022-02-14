@@ -9,8 +9,6 @@ import Container from '@mui/material/Container';
 import Avatar from '@mui/material/Avatar';
 import Tooltip from '@mui/material/Tooltip';
 import MenuItem from '@mui/material/MenuItem';
-import FormControl from '@mui/material/FormControl';
-import NativeSelect from '@mui/material/NativeSelect';
 
 const settings = ['Profile', 'Account', 'Dashboard', 'Logout'];
 
@@ -37,17 +35,6 @@ const Navbar = () => {
           >
             LOGO
           </Typography>
-            <Box sx={{ minWidth: 120 }}>
-            <FormControl fullWidth>
-                <NativeSelect
-                defaultValue="MainPage"
-                >
-                <option value="MainPage">MainPage</option>
-                <option value="PlayersPage">PlayersPage</option>
-                <option value="FootFieldPage">FootFieldPage</option>
-                </NativeSelect>
-            </FormControl>
-            </Box>
           <Box sx={{ flexGrow: 0 }}>
             <Tooltip title="Open settings">
               <IconButton onClick={handleOpenUserMenu} sx={{ p: 0 }}>
